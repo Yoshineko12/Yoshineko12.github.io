@@ -1,90 +1,117 @@
-/* style.css */
-
-/* --- 基本設定 --- */
+/* bodyの基本的なスタイル */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #F8F4FF; /* 薄い紫の背景 */
-  color: #333; /* 標準の文字色 */
-  line-height: 1.6;
-  margin: 0;
-  padding: 20px;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; /* モダンなフォント */
+    line-height: 1.6;
+    margin: 0; /* マージンをリセット */
+    padding: 20px; /* 全体にパディング */
+    color: #333; /* 基本の文字色 */
+    background-color: #e8f5e9; /* 淡い緑の背景色 */
 }
 
-/* --- ヘッダーと見出し --- */
+/* ヘッディングのスタイル */
+h1, h2, h3 {
+    color: #2e7d32; /* 少し濃いめの緑の文字色 */
+    text-align: center; /* 中央寄せ */
+    margin-bottom: 15px; /* 下にスペース */
+}
+
 h1 {
-  color: #6A057F; /* 濃い紫色のタイトル */
-  text-align: center;
-  margin-bottom: 40px;
-  border-bottom: 2px solid #D8BFD8; /* 紫色の下線 */
-  padding-bottom: 10px;
+    font-size: 2.8em; /* 大きなフォントサイズ */
+    padding-bottom: 10px; /* 下にパディング */
+    border-bottom: 2px solid #a5d6a7; /* 罫線 */
+    margin-top: 0; /* 上マージンをリセット */
 }
 
 h2 {
-  color: #8A2BE2; /* 青みがかった紫色の見出し */
-  border-left: 5px solid #8A2BE2;
-  padding-left: 10px;
-  margin-top: 30px;
-  margin-bottom: 15px;
+    font-size: 2em;
+    color: #388e3c; /* さらに濃い緑 */
+    border-left: 5px solid #66bb6a; /* 左側にアクセント線 */
+    padding-left: 10px;
+    margin-top: 30px; /* 上にスペース */
 }
 
 h3 {
-  color: #9932CC; /* やや明るい紫色の見出し */
-  margin-top: 25px;
-  margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #43a047; /* h2より少し明るい緑 */
+    margin-top: 20px;
 }
 
-/* --- 段落 --- */
+/* 段落のスタイル */
 p {
-  margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
 
-/* --- リスト --- */
-ul {
-  list-style-type: none; /* デフォルトのリストマーカーをなくす */
-  padding-left: 0;
-}
-
-ul li {
-  background-color: #EDE8F7; /* リスト項目の背景を薄い紫に */
-  margin-bottom: 8px;
-  padding: 10px 15px;
-  border-left: 3px solid #BA55D3; /* 紫色の左枠線 */
-  border-radius: 4px;
-}
-
-/* --- テーブル --- */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-table th, table td {
-  border: 1px solid #D8BFD8; /* 紫色の枠線 */
-  padding: 10px;
-  text-align: left;
-}
-
-table th {
-  background-color: #9370DB; /* テーブルヘッダーの背景を紫に */
-  color: white; /* ヘッダーの文字色を白に */
-  font-weight: bold;
-}
-
-/* --- リンク --- */
+/* リンクのスタイル */
 a {
-  color: #6A057F; /* リンク色を濃い紫に */
-  text-decoration: none; /* 下線をなくす */
+    color: #1b5e20; /* 濃い緑のリンク色 */
+    text-decoration: none; /* 下線なし */
+    transition: color 0.3s ease; /* ホバー時のアニメーション */
 }
 
 a:hover {
-  text-decoration: underline; /* ホバーで下線を表示 */
-  color: #8A2BE2; /* ホバーで少し明るい紫に */
+    color: #4caf50; /* ホバー時に明るい緑 */
+    text-decoration: underline; /* ホバー時に下線 */
 }
 
-/* --- レスポンシブ対応 --- */
-@media (max-width: 768px) {
-  body {
-    padding: 15px;
-  }
+/* リストのスタイル */
+ul {
+    list-style: none; /* デフォルトのリストスタイルを無効化 */
+    padding: 0;
+    margin-left: 20px; /* インデント */
+}
+
+ul li {
+    margin-bottom: 8px;
+    padding-left: 25px; /* アイコン分のスペース */
+    position: relative; /* アイコン配置のため */
+}
+
+ul li::before {
+    content: '✓'; /* チェックマークのアイコン */
+    color: #4caf50; /* 緑色 */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* テーブルのスタイル */
+table {
+    width: 100%;
+    border-collapse: collapse; /* ボーダーを結合 */
+    margin-top: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 影を追加 */
+}
+
+table, th, td {
+    border: 1px solid #c8e6c9; /* 淡い緑のボーダー */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #dcedc8; /* 明るい緑のヘッダ背景 */
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffffff; /* セルの背景色 */
+}
+
+/* ここから画像に関するスタイルを追加・修正 */
+.profile-image {
+    max-width: 150px; /* 画像の最大幅を150pxに設定 */
+    height: auto; /* 高さはアスペクト比を保って自動調整 */
+    border-radius: 50%; /* 画像を円形にする */
+    display: block; /* ブロック要素にしてmargin: autoで中央寄せ可能にする */
+    margin: 20px auto; /* 上下20px、左右は自動で中央寄せ */
+    border: 5px solid #66bb6a; /* 緑色の枠線 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* 影を付けて立体感を出す */
+    object-fit: cover; /* 画像がはみ出さないように、枠に合わせて切り抜かれるようにする */
 }

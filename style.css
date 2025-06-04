@@ -1,75 +1,14 @@
-/* bodyの基本的なスタイル */
-body {
-    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; /* モダンなフォント */
-    line-height: 1.6;
-    margin: 0; /* マージンをリセット */
-    padding: 20px; /* 全体にパディング */
-    color: #333; /* 基本の文字色 */
-    background-color: #e8f5e9; /* 淡い緑の背景色 */
+.card {
+  background: linear-gradient(to bottom, #E6E6FA, #D8BFD8); /* 薄い紫色のグラデーション背景 */
+  border: 1px solid #BA55D3; /* 紫色の枠線 */
+  box-shadow: 5px 5px 10px #9370DB; /* 紫色の影 */
+  padding: 20px;
 }
 
-/* ヘッディングのスタイル */
-h1, h2, h3 {
-    color: #2e7d32; /* 少し濃いめの緑の文字色 */
-    text-align: center; /* 中央寄せ */
-    margin-bottom: 15px; /* 下にスペース */
+.button {
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
 }
-
-h1 {
-    font-size: 2.8em; /* 大きなフォントサイズ */
-    padding-bottom: 10px; /* 下にパディング */
-    border-bottom: 2px solid #a5d6a7; /* 罫線 */
-    margin-top: 0; /* 上マージンをリセット */
-}
-
-h2 {
-    font-size: 2em;
-    color: #388e3c; /* さらに濃い緑 */
-    border-left: 5px solid #66bb6a; /* 左側にアクセント線 */
-    padding-left: 10px;
-    margin-top: 30px; /* 上にスペース */
-}
-
-h3 {
-    font-size: 1.5em;
-    color: #43a047; /* h2より少し明るい緑 */
-    margin-top: 20px;
-}
-
-/* 段落のスタイル */
-p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-/* リンクのスタイル */
-a {
-    color: #1b5e20; /* 濃い緑のリンク色 */
-    text-decoration: none; /* 下線なし */
-    transition: color 0.3s ease; /* ホバー時のアニメーション */
-}
-
-a:hover {
-    color: #4caf50; /* ホバー時に明るい緑 */
-    text-decoration: underline; /* ホバー時に下線 */
-}
-
-/* リストのスタイル */
-ul {
-    list-style: none; /* デフォルトのリストスタイルを無効化 */
-    padding: 0;
-    margin-left: 20px; /* インデント */
-}
-
-ul li {
-    margin-bottom: 8px;
-    padding-left: 25px; /* アイコン分のスペース */
-    position: relative; /* アイコン配置のため */
-}
-
-ul li::before {
-    content: '✓'; /* チェックマークのアイコン */
-    color: #4caf50; /* 緑色 */
-    font-weight: bold;
-    position: absolute;

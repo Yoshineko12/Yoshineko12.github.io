@@ -15,8 +15,8 @@ h1, h2, h3 {
 
 /* Profile Image */
 .profile-image {
-    width: 150px; /* Smaller image size */
-    height: 150px;
+    width: 90px; /* Smaller image size */
+    height: 90px;
     border-radius: 50%; /* Makes the image round */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     display: block; /* Centers the image */

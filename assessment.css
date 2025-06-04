@@ -1,0 +1,90 @@
+/* ==================================== */
+/* 緑を基調としたカラーパレットの定義 (CSS変数) */
+/* ==================================== */
+:root {
+    --green-light: #e8f5e9; /* 淡い緑 (背景) */
+    --green-medium: #81c784; /* 中間の緑 */
+    --green-dark: #388e3c;  /* 少し濃い緑 (主要要素) */
+    --green-darker: #1b5e20; /* 非常に濃い緑 (テキスト、ボーダー) */
+    --text-light: #f1f8e9; /* 明るいテキスト色 */
+    --gray-light: #f0f2f5; /* グレー系の補助色 */
+    --white: #ffffff;
+    --black: #212529;
+}
+
+/* ==================================== */
+/* 全体的な基本スタイル */
+/* ==================================== */
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--green-light) !important; /* Bootstrapのbg-primary-subtleを上書き */
+    color: var(--black);
+}
+
+/* ヘッディングのスタイル */
+h1 {
+    color: var(--green-darker);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--black);
+}
+
+/* ==================================== */
+/* Bootstrapコンポーネントのカスタマイズ */
+/* ==================================== */
+
+/* Navbar (ヘッダ) */
+.navbar.bg-primary {
+    background-color: var(--green-dark) !important; /* Bootstrapのbg-primaryを上書き */
+}
+
+.navbar-brand {
+    color: var(--text-light) !important; /* テキスト色を白に */
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* ボタン (診断するボタン) */
+.btn-primary {
+    background-color: var(--green-dark) !important; /* デフォルトの青を上書き */
+    border-color: var(--green-darker) !important; /* ボーダー色も調整 */
+    color: var(--white) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--green-darker) !important; /* ホバー時の色 */
+    border-color: var(--green-darker) !important;
+}
+
+/* 入力フォーム (Input Group) */
+.form-control {
+    border-color: var(--green-medium);
+}
+
+.form-control:focus {
+    border-color: var(--green-dark);
+    box-shadow: 0 0 0 0.25rem rgba(56, 142, 60, 0.25); /* フォーカス時の影 */
+}
+
+/* カード (診断結果表示) */
+.card {
+    border-color: var(--green-darker);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* 入力フォームとの間にスペース */
+    border-radius: 8px; /* 角を丸く */
+    overflow: hidden; /* コンテンツがはみ出さないように */
+}
+
+.card-header.text-bg-primary {
+    background-color: var(--green-dark) !important; /* デフォルトの青を上書き */
+    color: var(--text-light) !important;
+    font-size: 1.25em;
+    font-weight: bold

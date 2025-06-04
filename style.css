@@ -4,29 +4,29 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f8f0ff; /* Very light purple background */
+    background-color: #f8f0ff; /* ごく薄い紫色の背景 */
     color: #333;
 }
 
 /* Headings */
 h1, h2, h3 {
-    color: #6a0dad; /* Darker purple for headings */
+    color: #6a0dad; /* 見出しに濃い紫 */
 }
 
 /* Profile Image */
 .profile-image {
-    width: 90px; /* Smaller image size */
-    height: 90px;
-    border-radius: 50%; /* Makes the image round */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    display: block; /* Centers the image */
-    margin: 20px auto; /* Adds some space and centers */
-    border: 3px solid #b39ddb; /* Light purple border around the image */
+    width: 80px; /* 画像の幅を80pxに */
+    height: 80px; /* 画像の高さを80pxに */
+    border-radius: 50%; /* 画像を丸くする */
+    object-fit: cover; /* 画像が歪まずにエリアをカバーするようにする */
+    display: block; /* 画像を中央に配置 */
+    margin: 20px auto; /* 余白を追加し、中央に配置 */
+    border: 3px solid #b39ddb; /* 画像の周りに薄い紫の枠線 */
 }
 
 /* Links */
 a {
-    color: #8a2be2; /* Blue-violet for links */
+    color: #8a2be2; /* リンクに青みがかった紫 */
     text-decoration: none;
 }
 
@@ -41,8 +41,8 @@ ul {
 }
 
 ul li::before {
-    content: "• "; /* Custom bullet point */
-    color: #8a2be2; /* Purple bullet */
+    content: "• "; /* カスタムの箇条書き記号 */
+    color: #8a2be2; /* 紫の箇条書き */
 }
 
 /* Table */
@@ -53,20 +53,20 @@ table {
 }
 
 th, td {
-    border: 1px solid #d1c4e9; /* Light purple border for table cells */
+    border: 1px solid #d1c4e9; /* テーブルセルに薄い紫の枠線 */
     padding: 8px;
     text-align: left;
 }
 
 th {
-    background-color: #e6e2f0; /* Slightly darker purple for table headers */
+    background-color: #e6e2f0; /* テーブルヘッダーに少し濃い紫 */
 }
 
 /* Open Processing iframe */
 iframe {
     display: block;
     margin: 20px auto;
-    border: 1px solid #d1c4e9; /* Light purple border for the iframe */
+    border: 1px solid #d1c4e9; /* iframeに薄い紫の枠線 */
 }
 
 /* Paragraphs */

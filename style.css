@@ -1,14 +1,90 @@
-.card {
-  background: linear-gradient(to bottom, #E6E6FA, #D8BFD8); /* 薄い紫色のグラデーション背景 */
-  border: 1px solid #BA55D3; /* 紫色の枠線 */
-  box-shadow: 5px 5px 10px #9370DB; /* 紫色の影 */
+/* style.css */
+
+/* --- 基本設定 --- */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F8F4FF; /* 薄い紫の背景 */
+  color: #333; /* 標準の文字色 */
+  line-height: 1.6;
+  margin: 0;
   padding: 20px;
 }
 
-.button {
-  background-color: purple;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+/* --- ヘッダーと見出し --- */
+h1 {
+  color: #6A057F; /* 濃い紫色のタイトル */
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #D8BFD8; /* 紫色の下線 */
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: #8A2BE2; /* 青みがかった紫色の見出し */
+  border-left: 5px solid #8A2BE2;
+  padding-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #9932CC; /* やや明るい紫色の見出し */
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* --- 段落 --- */
+p {
+  margin-bottom: 15px;
+}
+
+/* --- リスト --- */
+ul {
+  list-style-type: none; /* デフォルトのリストマーカーをなくす */
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #EDE8F7; /* リスト項目の背景を薄い紫に */
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  border-left: 3px solid #BA55D3; /* 紫色の左枠線 */
+  border-radius: 4px;
+}
+
+/* --- テーブル --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #D8BFD8; /* 紫色の枠線 */
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #9370DB; /* テーブルヘッダーの背景を紫に */
+  color: white; /* ヘッダーの文字色を白に */
+  font-weight: bold;
+}
+
+/* --- リンク --- */
+a {
+  color: #6A057F; /* リンク色を濃い紫に */
+  text-decoration: none; /* 下線をなくす */
+}
+
+a:hover {
+  text-decoration: underline; /* ホバーで下線を表示 */
+  color: #8A2BE2; /* ホバーで少し明るい紫に */
+}
+
+/* --- レスポンシブ対応 --- */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
 }

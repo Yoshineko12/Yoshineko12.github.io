@@ -106,7 +106,7 @@ td {
 
 /* ここから画像に関するスタイルを追加・修正 */
 .profile-image {
-    max-width: 150px; /* 画像の最大幅を150pxに設定 */
+    max-width: 70px; /* 画像の最大幅を150pxに設定 */
     height: auto; /* 高さはアスペクト比を保って自動調整 */
     border-radius: 50%; /* 画像を円形にする */
     display: block; /* ブロック要素にしてmargin: autoで中央寄せ可能にする */
